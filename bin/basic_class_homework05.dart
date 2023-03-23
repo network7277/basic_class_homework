@@ -8,5 +8,23 @@ Create an object named "p2" whose name is "Shavkat"
 Create an object named "p3" whose name is "Jasur"
 
 */
+class Person {
+    String name = '';
 
-void main() {}
+    Person ( String name ){
+        this.name = name;
+    }
+
+    String tree_name(){
+        return '$name';
+    }
+}
+void main() {
+    Person p1 = Person('Anvar');
+    Person p2 = Person('Shavkat');
+    Person p3 = Person('Jasur');
+
+    print(p1.tree_name());
+    print(p2.tree_name());
+    print(p3.tree_name());
+}
